@@ -27,5 +27,10 @@ namespace HotelWebService
         public virtual Room Room { get; set; }
 
         public virtual Guest Guest { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Booking_id} | {Hotel_No} | {Guest_No} | {Date_From} | {Date_To} | {Room_No}";
+        }
     }
 }

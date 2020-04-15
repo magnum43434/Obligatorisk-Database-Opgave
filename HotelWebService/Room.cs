@@ -34,5 +34,10 @@ namespace HotelWebService
         public virtual Hotel Hotel { get; set; }
 
         public virtual RoomType RoomType { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Room_No} | {Hotel_No} | {Type}";
+        }
     }
 }

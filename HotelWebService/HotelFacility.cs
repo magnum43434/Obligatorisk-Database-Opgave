@@ -18,5 +18,10 @@ namespace HotelWebService
         public virtual Facility Facility { get; set; }
 
         public virtual Hotel Hotel { get; set; }
+
+        public override string ToString()
+        {
+            return $"{HF_Id} | {Hotel_No} | {Facility_No}";
+        }
     }
 }

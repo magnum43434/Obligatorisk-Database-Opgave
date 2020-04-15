@@ -33,5 +33,10 @@ namespace HotelWebService
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Room> Rooms { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Hotel_No} | {Name} | {Address}";
+        }
     }
 }

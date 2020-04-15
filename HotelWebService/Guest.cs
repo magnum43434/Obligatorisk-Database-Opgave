@@ -29,5 +29,10 @@ namespace HotelWebService
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Booking> Bookings { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Guest_No} | {Name} | {Address}";
+        }
     }
 }
